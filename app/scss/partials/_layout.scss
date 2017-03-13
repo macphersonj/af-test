@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: url('../images/bg.png');
+  color: $dark-grey;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  @include bp(med) {
+    padding: 0 10px;
+  }
+}
+
+.container:before, .container:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+
+.flex-container--body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  @include bp(small) {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+.centered-content {
+  width: 100%;
+  @include bp(med) {
+    width: 80%;
+  }
+  @include bp(small) {
+    width: 100%;
+  }
+}

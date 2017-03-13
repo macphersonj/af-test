@@ -110,11 +110,11 @@ body {
   background: url("/images/arrow.png"); }
 
 .rewards--widget_body form input {
-  border: 1px solid #ff992c;
+  border: 1px solid $dark-orange;
   width: 70%;
   height: 44px;
   padding: 0 10px;
-  background: #ffefdd; }
+  background: $light-orange; }
 
 .rewards--widget_body p {
   text-align: center;

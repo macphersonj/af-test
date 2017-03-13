@@ -1,0 +1,85 @@
+.rewards--header {
+  color: $white;
+  text-align: center;
+}
+
+.rewards--widget {
+  background: $white;
+  width: 860px;
+  margin: 40px auto 20px auto;
+  @include bp(med) {
+    width: 100%;
+  }
+}
+
+.rewards--widget_header {
+  width: 100%;
+  background: $white;
+  overflow: auto;
+}
+
+.rewards--widget_body form {
+  width: 650px;
+  margin: 0 auto;
+  overflow: auto;
+  @include bp(med) {
+    width: 100%;
+  }
+}
+
+.rewards--widget_body form input {
+  border: 1px solid $dark-orange;
+  width: 70%;
+  height: 44px;
+  padding: 0 10px;
+  background: $light-orange;
+  @include bp(med) {
+    width: 100%;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+}
+
+.rewards--widget_form {
+  display: none;
+}
+
+.form_active {
+  display: block;
+}
+
+.rewards--widget_body form .input-two--fields {
+  width: 34%;
+  margin: 0 10px 0 0;
+  @include bp(med) {
+    width: 100%;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+}
+
+.rewards--widget_body {
+  padding: 40px 80px;
+  @include bp(med) {
+    padding: 20px;
+  }
+}
+
+.rewards--widget_body p {
+  text-align: center;
+  font-size: 1.125em;
+  width: 90%;
+  margin: 30px auto 0 auto;
+  @include bp(med) {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+
+.rewards--widget_body .thanks-message p {
+  margin: 30px auto;
+}
+
+.rewards--widget_body a {
+  color: $dark-grey;
+}

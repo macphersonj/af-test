@@ -1,0 +1,46 @@
+.rewards--widget_header-tab {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  border-bottom: 1px solid #e4e4e4;
+  text-align: center;
+  position: relative;
+  color: $dark-grey;
+  cursor: pointer;
+
+}
+
+.rewards--widget_header-tab p {
+  display: inline-block;
+  padding: 1em 0;
+  margin: 0;
+  width: 100%;
+  @include bp(small) {
+    font-size: 0.8em;
+    padding: 1.5em 0;
+  }
+}
+
+.widget--tab_active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  right: 0;
+  background: #253b80;
+}
+
+.rewards--widget_header-tab:not(:first-of-type):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #e4e4e4;
+}
+
+.tab-inactive {
+  color: #d3d3d3;
+}

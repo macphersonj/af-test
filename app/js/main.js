@@ -46,7 +46,6 @@ $(document).ready(function() {
 					success: function (data) {
 						console.log(data);
 						console.log('existingMember submitted');
-						console.log(existingMember.serialize());
 						formThanks();
 					},
 					complete: function() {

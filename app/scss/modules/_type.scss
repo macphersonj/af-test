@@ -1,0 +1,30 @@
+p, a, ul, li, ol {
+  font-size: 1em;
+}
+
+.rewards--terms {
+  text-align: center;
+}
+
+.rewards--terms p {
+  font-size: 0.875rem;
+  color: $white;
+}
+
+.rewards--terms a {
+  color: $white;
+  font-size: 0.875rem;
+}
+
+.rewards--header h1 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.rewards--header p {
+  font-size: 1.125em;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}

@@ -2,72 +2,77 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/styles.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 
 <body>
   <div class="container">
-    <div class="rewards--header">
-      <h1>Claim your 500 Reward Points</h1>
-      <p>Redeem for a $5 bonus towards your Reward account.</p>
-    </div>
-
-    <div class="rewards--widget">
-
-      <div class="rewards--widget_header">
-        <div class="rewards--widget_header-tab existing-member_tab">
-          <p>
-            I'm already a member
-          </p>
+    <div class="flex-container--body">
+      <div class="centered-content">
+        <div class="rewards--header">
+          <h1>Claim your 500 Reward Points</h1>
+          <p>Redeem for a $5 bonus towards your Reward account.</p>
         </div>
-        <div class="rewards--widget_header-tab new-member_tab widget--tab_active">
-          <p>
-            I’m not a member yet
-          </p>
+
+        <div class="rewards--widget">
+
+          <div class="rewards--widget_header">
+            <div class="rewards--widget_header-tab existing-member_tab">
+              <p>
+                I'm already a member
+              </p>
+            </div>
+            <div class="rewards--widget_header-tab new-member_tab widget--tab_active">
+              <p>
+                I’m not a member yet
+              </p>
+            </div>
+          </div>
+
+          <div class="rewards--widget_body">
+            <div class="rewards--widget_form new-member form_active" id="newMember">
+              <form>
+                  <input type="email" name="email" placeholder="Enter your email address">
+                  <button type="submit" class="button--primary">Submit</button>
+              </form>
+              <p>
+                To claim your 500 Reward Points, simply <a href="http://analogfolk.com/careers/517450?city=sydney&gh_jid=517450" target="_blank">join here</a>.<br/>
+                Takes less than 2 minutes.
+              </p>
+            </div>
+
+            <div class="rewards--widget_form existing-member" id="existingMember">
+              <form>
+                  <input type="email" name="email" placeholder="Enter your email address" required="true" class="input-two--fields">
+                  <input type="text" name="name" placeholder="Enter your username" required="true" class="input-two--fields">
+                  <button type="submit" class="button--primary">Claim your points</button>
+              </form>
+              <p>
+                Enter the email address and username of your account and we’ll credit you with 500 points
+              </p>
+            </div>
+
+            <div class="rewards--widget_form thanks-message">
+              <p>
+                Thanks. You’ll see the points in your account within 5 working days.
+              </p>
+            </div>
+          </div>
+
+
+    	   </div>
+
+         <div class="rewards--terms">
+           <p>
+             Terms and Conditions apply. <a href="http://analogfolk.com/privacy-policy" target="_blank">View full T&Cs.</a>
+           </p>
+         </div>
+
         </div>
       </div>
-
-      <div class="rewards--widget_body">
-        <div class="rewards--widget_form new-member form_active" id="newMember">
-          <form action="" method="">
-              <input type="email" name="email" placeholder="Enter your email address">
-              <button type="submit">Submit</button>
-          </form>
-          <p>
-            To claim your 500 Reward Points, simply <a href="#">join here</a>.<br/>
-            Takes less than 2 minutes.
-          </p>
-        </div>
-
-        <div class="rewards--widget_form existing-member" id="existingMember">
-          <form action="" method="">
-              <input type="email" name="email" placeholder="Enter your email address" required="true" class="input-two--fields">
-              <input type="text" name="name" placeholder="Enter your username" required="true" class="input-two--fields">
-              <button type="submit">Claim your points</button>
-          </form>
-          <p>
-            Enter the email address and username of your account and we’ll credit you with 500 points
-          </p>
-        </div>
-
-        <div class="rewards--widget_form thanks-message">
-          <p>
-            Thanks. You’ll see the points in your account within 5 working days.
-          </p>
-        </div>
-      </div>
-
-
-	   </div>
-
-     <div class="rewards--terms">
-       <p>
-         Terms and Conditions apply. <a href="#">View full T&Cs.</a>
-       </p>
-     </div>
-
     </div>
   </div>
 
